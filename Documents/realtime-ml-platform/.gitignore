@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.*
+
+# Models & Data
+*.pth
+*.onnx
+*.mar
+*.pt
+data/
+models/*.bin
+
+# Redis
+dump.rdb
+
+# IDE
+.vscode/
+.idea/
+
+# Kubernetes
+kubeconfig
+secrets/
+
+# Logs
+*.log
+
+# Docker
+*.dockerignore

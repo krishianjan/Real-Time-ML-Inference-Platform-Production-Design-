@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+kafka-python==2.0.2
+redis==5.2.1
+torch==2.5.1
+torchserve==0.11.1
+torch-model-archiver==0.11.1
+prometheus-client==0.21.0
+opentelemetry-api==1.28.2
+opentelemetry-sdk==1.28.2
+opentelemetry-exporter-otlp==1.28.2
+python-dotenv==1.0.1
+pydantic-settings==2.6.1
+structlog==24.4.0

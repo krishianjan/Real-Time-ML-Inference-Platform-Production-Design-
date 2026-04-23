@@ -1,0 +1,14 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: inference-scaler
+spec:
+  scaleTargetRef:
+    name: inference-service
+  triggers:
+  - type: kafka
+    metadata:
+      bootstrapServers: kafka-broker:9092
+      consumerGroup: inference-group
+      topic: inference-requests
+      lagThreshold: "100"
