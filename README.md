@@ -46,23 +46,38 @@ The **Real-Time ML Inference Platform** is a complete, production‑ready system
 | 🛡️ **Fault Tolerant** | Dead‑letter queues, idempotent handlers, automatic retries |
 
 realtime-ml-platform/
+
+
+
 ├── .github/workflows/          # CI/CD pipelines
+
 ├── k8s/                         # Kubernetes manifests
+
 │   ├── base/                    # Base Kustomize
+
 │   └── overlays/production/     # Production overlays
+
 ├── src/
 │   ├── ingestion/               # Kafka consumer & processor
+
 │   ├── inference/               # TorchServe handler & models
 │   │   └── model_store/         # Model artifacts
+
 │   ├── feature_store/           # Redis client
 │   ├── lib/                     # Shared utilities
 │   └── monitoring/              # Prometheus & Grafana configs
+
 ├── docker/                      # Dockerfiles
+
 ├── scripts/                     # Utility scripts
 ├── tests/                       # Unit & integration tests
+
 ├── docker-compose.yml           # Local development stack
+
 ├── Makefile                     # Common tasks
+
 ├── config.properties            # TorchServe configuration
+
 └── README.md                    # You are here!
 
 ## 🏗️ Architecture
